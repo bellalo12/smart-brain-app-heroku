@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'tachyons';
+import Particles from 'react-particles-js';
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
 import Rank from './components/Rank/Rank';
@@ -8,6 +9,18 @@ import ImageLink from './components/ImageLink/ImageLink'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition'
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
+
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 100,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    }
+  }
+}
 
 
 const initialState={
@@ -107,6 +120,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Particles className='particles'
+        params={particlesOptions}
+        />
         <Navigation onRouteChange={this.onRouteChange} isSignedIn={this.state.isSignedIn}/>
         {this.state.route === 'home'
         ? <div>
