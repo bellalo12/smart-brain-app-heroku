@@ -59,13 +59,13 @@ class Register extends React.Component {
         id="name"/>
       </div>
       <div className="mt3">
-        <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
+        <label className="db fw6 lh-copy f6" htmlFor="user_email">Email</label>
         <input
         onChange={this.onEmailChange}
         className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
         type="email"
-         name="email-address"
-         id="email-address"/>
+         name="user_email"
+         id="user_email"/>
       </div>
       <div className="mv3">
         <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
