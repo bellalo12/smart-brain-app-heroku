@@ -82,7 +82,8 @@ class Register extends React.Component {
       onClick={this.onSubmitSignIn}
       className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
       type="submit"
-      value="submit"/>
+      value="submit"
+      pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}"/>
     </div>
     </div>
    </main>
